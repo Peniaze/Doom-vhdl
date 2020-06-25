@@ -2,10 +2,10 @@ object Form1: TForm1
   Left = 235
   Height = 480
   Top = 113
-  Width = 707
+  Width = 710
   Caption = 'Form1'
   ClientHeight = 480
-  ClientWidth = 707
+  ClientWidth = 710
   OnCreate = FormCreate
   LCLVersion = '1.8.4.0'
   object Image1: TImage
@@ -15,14 +15,22 @@ object Form1: TForm1
     Width = 640
     OnClick = Image1Click
   end
-  object Button1: TButton
+  object Button3: TButton
     Left = 656
-    Height = 25
-    Top = 24
+    Height = 24
+    Top = 110
     Width = 43
-    Caption = '>'
-    OnClick = Button1Click
+    Caption = 'up'
+    OnClick = Button3Click
     TabOrder = 0
+  end
+  object Button4: TButton
+    Left = 656
+    Height = 27
+    Top = 152
+    Width = 43
+    Caption = 'down'
+    TabOrder = 1
   end
   object Button2: TButton
     Left = 656
@@ -31,23 +39,29 @@ object Form1: TForm1
     Width = 43
     Caption = '<'
     OnClick = Button2Click
-    TabOrder = 1
-  end
-  object Button3: TButton
-    Left = 656
-    Height = 24
-    Top = 110
-    Width = 43
-    Caption = 'up'
-    OnClick = Button3Click
     TabOrder = 2
   end
-  object Button4: TButton
+  object Button1: TButton
     Left = 656
-    Height = 27
-    Top = 152
+    Height = 25
+    Top = 24
     Width = 43
-    Caption = 'down'
+    Caption = '>'
+    OnClick = Button1Click
     TabOrder = 3
+  end
+  object Edit1: TEdit
+    Left = 656
+    Height = 23
+    Top = 264
+    Width = 37
+    OnChange = Edit1Change
+    TabOrder = 4
+  end
+  object Image2: TImage
+    Left = 540
+    Height = 100
+    Top = 380
+    Width = 100
   end
 end
